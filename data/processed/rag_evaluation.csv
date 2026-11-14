@@ -1,0 +1,31 @@
+﻿case_id,question,expected_sources,expected_facts,expected_behavior
+RAG001,Where can I find my order tracking link?,Shipping Tracking,Tracking link is sent by email after dispatch.,supported
+RAG002,My tracking information is not available. What should I do?,Shipping Tracking,Contact support with the order number.,supported
+RAG003,How long does standard delivery take?,Delayed Delivery,Usually 3 to 7 business days after dispatch.,supported
+RAG004,My order has passed its estimated delivery date. What now?,Delayed Delivery,Support should investigate the shipment status.,supported
+RAG005,My package has not arrived and tracking is unavailable.,Shipping Tracking;Delayed Delivery,Ask for the order number or contact support; investigate shipment status if delayed beyond the estimated date.,multi_document
+RAG006,Does the delivery estimate start when I place the order?,Delayed Delivery,The stated 3 to 7 business days are counted after dispatch; do not claim they start at order placement.,partially_supported
+RAG007,Can I cancel my order before it is shipped?,Order Cancellation,Customers may request cancellation before dispatch.,supported
+RAG008,My order has already been dispatched. Can I cancel it?,Order Cancellation,"Once dispatched, the order may need to follow the return process.",supported
+RAG009,Can I cancel an order that is still being prepared?,Order Cancellation,The policy permits cancellation requests before dispatch; do not guarantee cancellation.,partially_supported
+RAG010,How many days do I have to request a refund?,Refund Policy,Within 30 days of delivery for eligible items.,supported
+RAG011,When will I receive my refund?,Refund Processing Time;Refund Policy,Refunds are issued after return inspection and approval; approved refunds generally take 5 to 10 business days to appear.,multi_document
+RAG012,Will I get a refund before my returned item is inspected?,Refund Policy,Refunds are issued after the return has been inspected and approved.,supported
+RAG013,I requested a refund 20 days after delivery. Am I eligible?,Refund Policy,"The request is within the 30-day window, but eligibility also depends on whether the item is eligible.",partially_supported
+RAG014,My refund was approved but has not appeared in my account.,Refund Processing Time,Generally 5 to 10 business days; timing may vary by bank.,supported
+RAG015,Will my refund arrive in exactly five days?,Refund Processing Time,Do not guarantee an exact date; approved refunds generally take 5 to 10 business days and bank timing varies.,supported
+RAG016,Can I get a refund after 45 days?,Refund Policy,The stated request window is within 30 days of delivery; do not invent exceptions.,supported
+RAG017,My product arrived damaged. What should I send to support?,Damaged Product,Contact support with the order number and photos of the damage.,supported
+RAG018,Will I definitely get a replacement for a damaged item?,Damaged Product,Support reviews eligibility for replacement or refund; do not guarantee either.,supported
+RAG019,My item is damaged. Can I choose between a refund and replacement?,Damaged Product,Support reviews eligibility for replacement or refund; the policy does not guarantee customer choice.,partially_supported
+RAG020,My payment failed. What should I check?,Payment Failed,"Verify card details, check available funds, and retry.",supported
+RAG021,My payment still fails after retrying. What should I do?,Payment Failed,Contact the bank or customer support if the problem persists.,supported
+RAG022,I was charged twice for one order. Can you reverse one charge?,Duplicate Payment,Support should verify transaction records before advising on reversal or refund.,supported
+RAG023,I see two charges for one order. Should I immediately request a refund?,Duplicate Payment,Support should verify transaction records before advising on reversal or refund.,supported
+RAG024,My order was dispatched late and is now overdue. What can support do?,Shipping Tracking;Delayed Delivery,Tracking link is sent after dispatch; support should investigate if delivery is beyond the estimated date.,multi_document
+RAG025,"I want to cancel my order, but it may already have shipped. What happens next?",Order Cancellation;Shipping Tracking,"Cancellation may be requested before dispatch; after dispatch, the return process may apply. Tracking link is sent after dispatch.",multi_document
+RAG026,My return was approved. How long until the money appears?,Refund Policy;Refund Processing Time,Refund follows inspection and approval; approved refunds generally take 5 to 10 business days to appear.,multi_document
+RAG027,Do you offer a two-year warranty on electronics?,,No warranty duration or warranty policy is present in the supplied knowledge base; ask support or flag for review.,unsupported
+RAG028,Can I exchange my item for a different size?,,No exchange policy is documented; do not promise an exchange.,unsupported
+RAG029,Do you deliver internationally?,,International delivery coverage is not documented; do not claim that it is available or unavailable.,unsupported
+RAG030,Can you guarantee delivery by tomorrow?,Delayed Delivery,"The policy gives a usual standard delivery estimate of 3 to 7 business days after dispatch, not a next-day guarantee.",unsupported

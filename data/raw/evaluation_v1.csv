@@ -1,0 +1,31 @@
+message,category
+My bank refused to authorize the purchase,payment
+The terminal says my card cannot be processed,payment
+I tried paying three times and every attempt was unsuccessful,payment
+A single checkout created multiple transactions on my statement,payment
+My account balance dropped but the store has no record of the purchase,payment
+The merchant has not acknowledged my successful bank transfer,payment
+The QR code payment completed but the shopping cart remains unpaid,payment
+My wallet was debited even though the checkout session expired,payment
+I cannot use net banking to finish this transaction,payment
+The purchase amount appears more than once in my banking history,payment
+The courier delivered my order to a different building,shipping
+The package has been sitting at a distribution hub for several days,shipping
+The estimated arrival date keeps moving further away,shipping
+My tracking link has stopped updating,shipping
+The delivery person marked my parcel delivered but I cannot find it,shipping
+I need to change the destination before dispatch,shipping
+My shipment was returned to the sender unexpectedly,shipping
+The carrier says my postal code is invalid,shipping
+I want to know which warehouse my package is currently in,shipping
+The delivery was postponed without any explanation,shipping
+How long will it take to receive the money for my returned shoes,refund
+I received a partial reimbursement instead of the full amount,refund
+The return was approved but the credit has not appeared,refund
+I need my purchase amount returned to the original payment method,refund
+Why was my reimbursement request denied,refund
+I cancelled the purchase and want my money back,refund
+The replacement item is defective so I would prefer a refund,refund
+I am still waiting for the credit from my returned order,refund
+Can you explain why my refund amount was reduced,refund
+Please reverse the purchase and return the amount I paid,refund

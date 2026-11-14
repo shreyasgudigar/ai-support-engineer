@@ -1,0 +1,31 @@
+message,category
+My Visa card is not going through,payment
+The website won't accept my Mastercard,payment
+My bank blocked the transaction,payment
+Checkout refuses my debit card,payment
+I can't complete the purchase using my card,payment
+My card authorization keeps failing,payment
+The transaction was rejected by my bank,payment
+I get an error whenever I try to pay,payment
+My UPI payment isn't working,payment
+The payment gateway keeps declining my transaction,payment
+I see two identical charges on my account,payment
+The same purchase appears twice on my statement,payment
+You debited my account two times,payment
+Why did you charge my card twice,payment
+There are duplicate transactions for one purchase,payment
+I was billed twice for the same order,payment
+My bank shows two deductions for one checkout,payment
+The merchant collected payment twice,payment
+My credit card statement shows an extra charge,payment
+I have been charged more than once for this purchase,payment
+My UPI payment succeeded but the order is still pending,payment
+The money was deducted but I got no confirmation,payment
+I paid but the order status still says unpaid,payment
+My bank transfer went through but checkout failed,payment
+The amount left my account but the order wasn't created,payment
+I haven't received confirmation of my transaction,payment
+My payment succeeded but the website shows an error,payment
+I completed the transfer but the merchant hasn't received it,payment
+The transaction is successful in my banking app but not on your site,payment
+My account was debited without an order confirmation,payment

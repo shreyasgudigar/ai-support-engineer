@@ -1,0 +1,61 @@
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    container_name: support_ai_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: support_ai
+      POSTGRES_USER: support_user
+      POSTGRES_PASSWORD: support_password
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./db/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+      - ./db/seed.sql:/docker-entrypoint-initdb.d/02-seed.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U support_user -d support_ai"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build: .
+    container_name: support_ai_api
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql://support_user:support_password@db:5432/support_ai
+      OLLAMA_URL: http://host.docker.internal:11434/api/generate
+      HF_HOME: /root/.cache/huggingface
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+    ports:
+      - "127.0.0.1:8000:8000"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - hf_cache:/root/.cache/huggingface
+    depends_on:
+      db:
+        condition: service_healthy
+
+  dashboard:
+    build: .
+    container_name: support_ai_dashboard
+    restart: unless-stopped
+    command: streamlit run dashboard.py --server.address=0.0.0.0 --server.port=8501
+    environment:
+      API_URL: http://api:8000
+    ports:
+      - "127.0.0.1:8501:8501"
+    depends_on:
+      - api
+
+volumes:
+  postgres_data:
+    external: true
+    name: ai-support-engineer_postgres_data
+  hf_cache:

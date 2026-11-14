@@ -1,0 +1,19 @@
+message,expected,Word TF-IDF,Word TF-IDF correct,Word + Character TF-IDF,Word + Character TF-IDF correct
+My Visa gets refused every time I try to buy something.,payment,shipping,False,refund,False
+There are two identical deductions on my statement.,payment,refund,False,refund,False
+Checkout rejected my Mastercard without explaining why.,payment,shipping,False,payment,True
+The shop took my money twice for one basket.,payment,refund,False,refund,False
+My UPI transfer succeeded but the merchant hasn't confirmed it.,payment,shipping,False,shipping,False
+The card authorization fails before I can place my order.,payment,shipping,False,shipping,False
+The parcel is stuck at the sorting centre.,shipping,shipping,True,shipping,True
+My shipment went to the wrong city.,shipping,shipping,True,shipping,True
+The delivery driver couldn't locate my house.,shipping,shipping,True,shipping,True
+Can you redirect the package to my office?,shipping,shipping,True,shipping,True
+The tracking number shows no movement.,shipping,shipping,True,refund,False
+My package is arriving much later than promised.,shipping,shipping,True,shipping,True
+I sent the jacket back but haven't been reimbursed.,refund,refund,True,refund,True
+The store accepted my return but my refund is missing.,refund,refund,True,refund,True
+Can I get my money back for an item that arrived broken?,refund,refund,True,refund,True
+I need to reverse the purchase and receive a refund.,refund,refund,True,refund,True
+When will the money from my return reach my account?,refund,shipping,False,shipping,False
+I was refunded less than the amount I originally paid.,refund,refund,True,refund,True

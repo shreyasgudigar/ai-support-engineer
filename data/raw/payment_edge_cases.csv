@@ -1,0 +1,16 @@
+message,category
+My card keeps getting declined at checkout,payment
+The bank charged me twice for the same purchase,payment
+My debit card was rejected during checkout,payment
+My credit card transaction was declined,payment
+I was charged two times for one order,payment
+There is a duplicate charge on my bank statement,payment
+The money left my account but checkout failed,payment
+My payment was deducted but the order was not confirmed,payment
+The bank declined my transaction,payment
+The checkout page says my card was rejected,payment
+I see two transactions for the same purchase,payment
+The payment processor rejected my card,payment
+My card works elsewhere but not on your website,payment
+I was billed twice for a single purchase,payment
+The transaction failed but my account was debited,payment

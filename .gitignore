@@ -1,0 +1,51 @@
+# Virtual environment
+.venv/
+
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# ML artifacts
+artifacts/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+# Environment and credentials
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Python test and tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local databases, backups and logs
+*.sqlite
+*.sqlite3
+*.db
+*.bak
+*.log
+*.vhdx
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# OS and IDE
+.idea/
+.DS_Store
+
+# Large external dataset and generated backups
+data/external/
+data/**/*backup*.csv

@@ -1,0 +1,35 @@
+message,category
+Where is my order,shipping
+When will my package arrive,shipping
+My delivery is delayed,shipping
+Track my shipment,shipping
+I have not received my parcel,shipping
+What is the delivery date,shipping
+My order has not shipped yet,shipping
+The courier has not delivered my package,shipping
+Can you check my tracking number,shipping
+Why is my shipment late,shipping
+I want a refund,refund
+How can I return this product,refund
+Please refund my money,refund
+I received a damaged item and want to return it,refund
+What is your return policy,refund
+I want to cancel and get my money back,refund
+How long does a refund take,refund
+Can I exchange this item,refund
+My refund has not arrived,refund
+Please process my return request,refund
+My payment failed,payment
+Why was my card declined,payment
+I was charged twice,payment
+The transaction was unsuccessful,payment
+My money was deducted but the order failed,payment
+Can I pay using another card,payment
+The payment gateway is not working,payment
+I cannot complete the checkout payment,payment
+Why did my transaction get rejected,payment
+I need help with a billing error,payment
+Need to update my address,shipping
+"I entered a wrong address, update it",shipping
+I have trouble editing the address,shipping
+Help modifying the shipping address,shipping

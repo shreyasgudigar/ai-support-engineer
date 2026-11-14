@@ -1,0 +1,19 @@
+message,expected,Previous model,Augmented model,Previous model correct,Augmented model correct
+My Visa gets refused every time I try to buy something.,payment,shipping,shipping,False,False
+There are two identical deductions on my statement.,payment,refund,refund,False,False
+Checkout rejected my Mastercard without explaining why.,payment,shipping,shipping,False,False
+The shop took my money twice for one basket.,payment,refund,refund,False,False
+My UPI transfer succeeded but the merchant hasn't confirmed it.,payment,shipping,shipping,False,False
+The card authorization fails before I can place my order.,payment,shipping,shipping,False,False
+The parcel is stuck at the sorting centre.,shipping,shipping,shipping,True,True
+My shipment went to the wrong city.,shipping,shipping,shipping,True,True
+The delivery driver couldn't locate my house.,shipping,shipping,shipping,True,True
+Can you redirect the package to my office?,shipping,shipping,shipping,True,True
+The tracking number shows no movement.,shipping,shipping,shipping,True,True
+My package is arriving much later than promised.,shipping,shipping,shipping,True,True
+I sent the jacket back but haven't been reimbursed.,refund,refund,refund,True,True
+The store accepted my return but my refund is missing.,refund,refund,refund,True,True
+Can I get my money back for an item that arrived broken?,refund,refund,refund,True,True
+I need to reverse the purchase and receive a refund.,refund,refund,refund,True,True
+When will the money from my return reach my account?,refund,shipping,shipping,False,False
+I was refunded less than the amount I originally paid.,refund,refund,refund,True,True
